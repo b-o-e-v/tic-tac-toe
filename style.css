@@ -1,0 +1,80 @@
+.game .game__cell:hover, .button:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: gainsboro;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+}
+
+.game {
+  width: 152px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[3];
+      grid-template-columns: repeat(3, 50px);
+  -ms-grid-rows: (50px)[3];
+      grid-template-rows: repeat(3, 50px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1px;
+  background-color: black;
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  margin: 10% auto 0;
+}
+
+.game .game__cell {
+  background-color: white;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  font-weight: bold;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+  outline: none;
+  cursor: pointer;
+}
+
+.statistics {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
+  width: 200px;
+  margin: 30px auto 0;
+  border: 1px solid black;
+  -webkit-box-shadow: 1px 1px 2px black;
+          box-shadow: 1px 1px 2px black;
+}
+
+.statistics .statistics__paragraph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */

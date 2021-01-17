@@ -1,0 +1,71 @@
+$color:  black; //переменная
+%hover {
+    transition: 0.5s;
+    background-color: gainsboro;
+} //шаблон
+
+.page {
+    padding: 0;
+    margin: 0;
+}
+
+.game {
+    width: 152px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    justify-content: center;
+    gap: 1px;
+    background-color: $color;
+    border: 1px solid $color;
+    box-shadow: 1px 1px 2px $color;
+    margin: 10% auto 0;
+
+    .game__cell {
+        background-color: white;
+        cursor: pointer;
+        &:hover {
+            @extend %hover;
+        }
+    }
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid $color;
+    border-radius: 10px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    box-shadow: 1px 1px 2px $color;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        @extend %hover;
+    }
+}
+
+.statistics {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 200px;
+    margin: 30px auto 0;
+    border: 1px solid $color;
+    box-shadow: 1px 1px 2px $color;
+    .statistics__paragraph {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+}
